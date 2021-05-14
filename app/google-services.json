@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "360637187151",
+    "project_id": "fyp-23",
+    "storage_bucket": "fyp-23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360637187151:android:9981ae94dd9aef1e2d963a",
+        "android_client_info": {
+          "package_name": "lb.edu.aub.fyp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360637187151-p4iekkuaaeas6t263129ilooo6o15kbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYRRZg9cl9Y3w5R1twSPgm5gg6HM2JBrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360637187151-p4iekkuaaeas6t263129ilooo6o15kbb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

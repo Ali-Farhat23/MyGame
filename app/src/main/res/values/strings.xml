@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FYP2</string>
+    <string name="sign_up">Sign up</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+
+    <array name = "sex">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+
+</resources>
