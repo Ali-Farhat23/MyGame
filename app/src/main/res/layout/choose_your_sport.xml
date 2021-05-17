@@ -1,46 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <Button
         android:id="@+id/buttonFootball"
-        android:layout_width="335dp"
-        android:layout_height="72dp"
-        android:text="Football"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/football"
         app:backgroundTint="@color/background"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="155dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="335dp"
-        android:layout_height="76dp"
-        android:text="Basketball"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/basketball"
         app:backgroundTint="@color/background"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="327dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFootball" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="327dp"
-        android:layout_height="68dp"
-        android:text="Tennis"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="160dp"
+        android:text="@string/tennis"
         app:backgroundTint="@color/background"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="503dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="405dp"
-        android:layout_height="74dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="79dp"
         android:background="@color/background"
-        android:text="Choose your sport:"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:text="@string/choose_your_sport"
         android:textColor="@color/white"
-        android:textSize="75px"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="2dp" />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFootball"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

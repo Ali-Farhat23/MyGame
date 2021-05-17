@@ -3,108 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="43dp"
+        android:src="@drawable/_my_game"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
     <Button
-        android:id="@+id/buttonSignUp"
-        android:layout_width="wrap_content"
+        android:id="@+id/login"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="188dp"
-        android:layout_marginTop="240dp"
-        android:text="@string/sign_up"
+        android:layout_gravity="start"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="82dp"
+        android:background="@color/background"
+        android:enabled="false"
+        android:text="@string/sign_in_sign_up"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/TextPassword"
-        android:layout_width="420dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="28dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/password"
-        android:importantForAutofill="no"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="622dp" />
-
-    <EditText
-        android:id="@+id/TextUsername"
-        android:layout_width="388dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/username"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="31dp" />
-
-    <EditText
-        android:id="@+id/TextFirstName"
-        android:layout_width="388dp"
-        android:layout_height="44dp"
-        android:ems="10"
-        android:hint="FirstName"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="106dp" />
-
-    <EditText
-        android:id="@+id/TextLastName"
-        android:layout_width="392dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:hint="LastName"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="172dp" />
-
-    <EditText
-        android:id="@+id/TextPhoneNumber"
-        android:layout_width="397dp"
-        android:layout_height="47dp"
-        android:ems="10"
-        android:hint="PhoneNumber"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="243dp" />
-
-    <EditText
-        android:id="@+id/TextAddress"
-        android:layout_width="390dp"
-        android:layout_height="46dp"
-        android:ems="10"
-        android:hint="Address"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="320dp" />
-
-    <EditText
-        android:id="@+id/TextEmail"
-        android:layout_width="390dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="402dp" />
-
-    <EditText
-        android:id="@+id/TextUserId"
-        android:layout_width="389dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="UserId"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="485dp" />
-
-    <Spinner
-        android:id="@+id/SpinnerSex"
-        android:layout_width="393dp"
-        android:layout_height="wrap_content"
-        android:entries="@array/sex"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="566dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

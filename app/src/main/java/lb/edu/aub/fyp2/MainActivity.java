@@ -14,8 +14,9 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText TextUsername, TextPassword;
+    EditText TextUsername, TextPassword, TextFirstName, TextLastName, TextAddress, TextEmail;
     Button buttonSignUp;
+    int TextNumber, TextUserId, TextSex;
 
     DatabaseReference databaseUsers;
 
@@ -38,20 +39,21 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void signIn() {
+    private void login() {
         String username = TextUsername.getText().toString().trim();
         String password = TextPassword.getText().toString().trim();
     }
-        private void signUp() {
+
+    private void signUp() {
         String username = TextUsername.getText().toString().trim();
         String password = TextPassword.getText().toString().trim();
         String first_name = TextFirstName.getText().toString().trim();;
         String last_name = TextLastName.getText().toString().trim();
-        int phone_number = TextNumber.getText().toString().trim();
+        int phone_number = Integer.parseInt(TextNumber.toString().trim());
         String address = TextAddress.getText().toString().trim();
         String email = TextEmail.getText().toString().trim();
-        int user_id = TextUserId.getText().toString().trim();
-        int sex = TextSex.getText().toString().trim();
+        int user_id = Integer.parseInt(TextNumber.toString.trim());
+        int sex = Integer.parseInt(TextNumber.toString().trim());
 
         if(!TextUtils.isEmpty(username)) {
             String id = databaseUsers.push().getKey();
